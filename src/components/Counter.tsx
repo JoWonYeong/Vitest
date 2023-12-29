@@ -13,9 +13,9 @@ export const Counter = () => {
 
   return (
     <div className='card'>
+      <div>결과값: {count}</div>
       <button onClick={increment}>증가</button>
       <button onClick={decrement}>감소</button>
-      <div>결과값: {count}</div>
     </div>
   );
 };

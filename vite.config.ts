@@ -11,14 +11,9 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
+    // transformMode: {
+    //   web: [/\.[jt]sx?$/],
+    // },
     setupFiles: './src/tests/setup.ts',
   },
-  // test: {
-  //   environment: 'jsdom',
-  //   globals: true,
-  //   transformMode: {
-  //     web: [/\.[jt]sx?$/],
-  //   },
-  //   setupFiles: './setupVitest.ts',
-  // },
 } as VitestConfigExport);
